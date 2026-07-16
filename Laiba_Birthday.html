@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Laiba ❤️</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600;800&display=swap');
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+body{
+
+height:100vh;
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:'Poppins',sans-serif;
+
+}
+
+
+
+.page{
+
+display:none;
+width:90%;
+max-width:520px;
+background:white;
+padding:35px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 0 35px #ff69b4;
+animation:show .6s ease;
+
+}
+
+
+.active{
+
+display:block;
+
+}
+
+
+
+@keyframes show{
+
+from{
+opacity:0;
+transform:scale(.8);
+}
+
+to{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
+
+
+h1{
+
+font-family:'Great Vibes',cursive;
+font-size:55px;
+color:#ff4081;
+margin-bottom:20px;
+
+}
+
+
+
+h2{
+
+color:#ff4081;
+
+}
+
+
+
+p{
+
+color:#555;
+font-size:17px;
+line-height:1.7;
+
+}
+
+
+
+button{
+
+margin-top:25px;
+padding:15px 35px;
+border:none;
+border-radius:40px;
+background:#ff4081;
+color:white;
+font-size:18px;
+cursor:pointer;
+box-shadow:0 5px 15px #ff9ac0;
+
+}
+
+
+
+button:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+.gift{
+
+font-size:90px;
+margin:25px;
+
+}
+
+
+
+#gameArea{
+
+height:350px;
+background:#ffe4ec;
+border-radius:25px;
+position:relative;
+overflow:hidden;
+margin-top:20px;
+
+}
+
+
+
+.teddy{
+
+position:absolute;
+font-size:60px;
+cursor:pointer;
+transition:.3s;
+
+}
+
+
+
+.teddy:hover{
+
+transform:scale(1.2);
+
+}
+
+
+
+#score{
+
+font-size:25px;
+color:#ff4081;
+
+}
+
+
+
+.cake{
+
+font-size:90px;
+animation:cakeShow 1s ease;
+
+}
+
+
+
+@keyframes cakeShow{
+
+from{
+
+transform:scale(0);
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+opacity:1;
+
+}
+
+}
+
+
+
+.letter{
+
+font-family:'Great Vibes',cursive;
+font-size:30px;
+color:#ff4081;
+line-height:1.8;
+background:#fff5fa;
+padding:25px;
+border-radius:25px;
+box-shadow:0 0 20px #ffb6c1;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- PAGE 1 -->
+
+<div id="page1" class="page active">
+
+
+<h1>
+Happy Birthday Laiba ❤️
+</h1>
+
+
+<p>
+
+Dear Laiba ✨
+
+<br><br>
+
+A special surprise has been created only for you.
+
+<br><br>
+
+May your day be filled with happiness, love and beautiful memories 💖
+
+</p>
+
+
+<div class="gift">
+
+🎁
+
+</div>
+
+
+<button onclick="startGame()">
+
+Start Surprise 💕
+
+</button>
+
+
+</div>
+
+
+
+
+
+<!-- PAGE 2 -->
+
+
+<div id="page2" class="page">
+
+
+<h1>
+
+🧸 Catch The Teddy
+
+</h1>
+
+
+<p>
+
+Catch 10 teddy bears to unlock your special surprise 🎁
+
+</p>
+
+
+<h2>
+
+Score:
+
+<span id="score">0</span>/10
+
+</h2>
+
+
+<div id="gameArea"></div>
+
+
+</div>
+
+
+
+
+
+<!-- PAGE 3 -->
+
+
+<div id="page3" class="page">
+
+
+<h1>
+
+🎁 Magic Gift Reveal
+
+</h1>
+
+
+<p>
+
+Amazing Laiba ❤️
+
+<br><br>
+
+You completed the teddy game 🧸
+
+<br><br>
+
+Open your special birthday gift ✨
+
+</p>
+
+
+<div class="gift" id="giftBox" onclick="openGift()">
+
+🎁
+
+</div>
+
+
+<div id="cakeBox"></div>
+
+
+<p>
+
+Click the gift box 💖
+
+</p>
+
+
+</div><!-- PAGE 4 -->
+
+<div id="page4" class="page">
+
+
+<h1>
+
+💌 Birthday Love Letter
+
+</h1>
+
+
+
+<div class="letter">
+
+
+Dear Laiba ❤️
+
+<br><br>
+
+
+Aaj ka din bohat special hai kyun ke aaj ek bohat special insan ka birthday hai ✨
+
+<br><br>
+
+
+Tumhari smile har moment ko beautiful bana deti hai.
+
+<br><br>
+
+
+Meri dua hai ke tumhari zindagi hamesha khushiyon, success aur pyari memories se bhari rahe 🌸
+
+<br><br>
+
+
+Tum hamesha aise hi smile karti raho, apne dreams complete karti raho aur hamesha shine karti raho ⭐
+
+<br><br>
+
+
+Happy Birthday Laiba 🎂❤️
+
+<br><br>
+
+
+You are truly special 💖
+
+<br><br>
+
+
+With lots of love ❤️
+
+
+</div>
+
+
+
+
+<button onclick="restart()">
+
+🔄 Restart Surprise
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<script>
+
+
+let score = 0;
+
+
+
+function showPage(page){
+
+
+document.querySelectorAll(".page").forEach(function(p){
+
+p.classList.remove("active");
+
+});
+
+
+document.getElementById(page).classList.add("active");
+
+
+}
+
+
+
+
+
+function startGame(){
+
+
+score = 0;
+
+document.getElementById("score").innerHTML = "0";
+
+
+showPage("page2");
+
+
+createTeddy();
+
+
+}
+
+
+
+
+
+function createTeddy(){
+
+
+let area = document.getElementById("gameArea");
+
+
+area.innerHTML = "";
+
+
+
+let teddy = document.createElement("div");
+
+
+teddy.className = "teddy";
+
+
+teddy.innerHTML = "🧸";
+
+
+
+teddy.style.left = Math.random()*80 + "%";
+
+teddy.style.top = Math.random()*75 + "%";
+
+
+
+teddy.onclick = function(){
+
+
+score++;
+
+
+document.getElementById("score").innerHTML = score;
+
+
+
+if(score >= 10){
+
+
+showPage("page3");
+
+
+}
+
+else{
+
+
+createTeddy();
+
+
+}
+
+
+
+};
+
+
+
+area.appendChild(teddy);
+
+
+
+}
+
+
+
+
+
+function openGift(){
+
+
+let gift = document.getElementById("giftBox");
+
+
+let cake = document.getElementById("cakeBox");
+
+
+
+gift.innerHTML = "✨";
+
+
+cake.innerHTML = `
+
+<div class="cake">
+
+🎂
+
+</div>
+
+<h2>
+
+Happy Birthday Laiba ❤️
+
+</h2>
+
+`;
+
+
+
+setTimeout(function(){
+
+
+showPage("page4");
+
+
+},2000);
+
+
+
+}
+
+
+
+
+
+function restart(){
+
+
+score = 0;
+
+
+document.getElementById("score").innerHTML = "0";
+
+
+document.getElementById("giftBox").innerHTML = "🎁";
+
+
+document.getElementById("cakeBox").innerHTML = "";
+
+
+showPage("page1");
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
